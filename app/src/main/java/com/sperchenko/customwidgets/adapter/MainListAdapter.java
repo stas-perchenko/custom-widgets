@@ -1,5 +1,6 @@
 package com.sperchenko.customwidgets.adapter;
 
+import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
@@ -24,13 +25,13 @@ public class MainListAdapter extends BaseExpandableListAdapter {
 
 
     private List<ChildActivityItem> mData;
-    private Context mContext;
+    private String mPackageName;
     private LayoutInflater mInflater;
     private OnStartActivityListener mListener;
 
     public MainListAdapter(Context context, List<ChildActivityItem> data, OnStartActivityListener l) {
         mData = data;
-        mContext = context;
+        mPackageName = context.getPackageName();
         mInflater = LayoutInflater.from(context);
         mListener = l;
     }
@@ -86,7 +87,7 @@ public class MainListAdapter extends BaseExpandableListAdapter {
     @Override
     public View getChildView(int groupPosition, int childPosition, boolean isLastChild, View convertView, ViewGroup parent) {
         View row = convertView;
-        ViewHolder holder = null;
+        ViewHolder holder;
         if (row != null) {
             holder = (ViewHolder) row.getTag();
         } else {
@@ -104,8 +105,9 @@ public class MainListAdapter extends BaseExpandableListAdapter {
         @Override
         public void onClick(View v) {
             if (mListener != null) {
-                Intent intent = null;
-                //TODO Create intent
+                Intent intent = new Intent();
+                String activityFullName = String.format("%s.activity.%s", mPackageName, v.getTag());
+                intent.setComponent(new ComponentName(mPackageName, activityFullName));
                 mListener.onStartActivity(intent);
             }
         }

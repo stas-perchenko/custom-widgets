@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
@@ -42,7 +43,12 @@ public class MainActivity extends Activity {
             data.add(new ChildActivityItem(names[i], descriptions[i]));
         }
 
-        ((ExpandableListView) findViewById(android.R.id.list)).setAdapter(new MainListAdapter(this, data));
+        ((ExpandableListView) findViewById(android.R.id.list)).setAdapter(new MainListAdapter(this, data, new MainListAdapter.OnStartActivityListener() {
+            @Override
+            public void onStartActivity(Intent intentToStart) {
+                startActivity(intentToStart);
+            }
+        }));
     }
 
     private void showError() {
