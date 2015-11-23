@@ -54,7 +54,7 @@ public class MainListAdapter extends BaseExpandableListAdapter {
     @Override
     public String getChild(int groupPosition, int childPosition) {
         if (mData != null && groupPosition < mData.size()) {
-            mData.get(groupPosition).getItemDescription();
+            return mData.get(groupPosition).getItemDescription();
         }
         return null;
     }
@@ -97,7 +97,7 @@ public class MainListAdapter extends BaseExpandableListAdapter {
             row.setTag(holder);
         }
         holder.getText().setText(getChild(groupPosition, childPosition));
-        holder.getButton().setTag(getGroup(groupPosition));
+        holder.getButton().setTag(getGroup(groupPosition).getItemName());
         return row;
     }
 

@@ -43,12 +43,18 @@ public class MainActivity extends Activity {
             data.add(new ChildActivityItem(names[i], descriptions[i]));
         }
 
-        ((ExpandableListView) findViewById(android.R.id.list)).setAdapter(new MainListAdapter(this, data, new MainListAdapter.OnStartActivityListener() {
+        ExpandableListView list = (ExpandableListView) findViewById(android.R.id.list);
+
+        list.setAdapter(new MainListAdapter(this, data, new MainListAdapter.OnStartActivityListener() {
             @Override
             public void onStartActivity(Intent intentToStart) {
                 startActivity(intentToStart);
             }
         }));
+
+        list.expandGroup(0);
+
+
     }
 
     private void showError() {
