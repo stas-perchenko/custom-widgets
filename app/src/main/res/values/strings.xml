@@ -6,6 +6,8 @@
     corresponded descriptions are not match.</string>
     <string name="err_items_count_btn">Close</string>
 
+    <string name="item_btn_launch">Launch</string>
+
     <string-array name="children_activity_names">
         <item>CircleTouchableViewActivity</item>
     </string-array>

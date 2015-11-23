@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="24dp"
+    android:paddingRight="12dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="12dp"
+    android:background="#F0F0F0">
+
+    <TextView android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="10dp"
+        android:textSize="15sp"
+        android:text="sskdjfhsd fsjkdfh sdjk fsjdk faj dsfhjkas fhdajs hdfdhf sdf hsdd jfshfjadh sfkjasd hfkjsdhfkjs hdeuif hsdaui fsdif"/>
+
+    <Button android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:button"
+        android:layout_below="@id/text"
+        android:layout_alignParentRight="true"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:text="@string/item_btn_launch"/>
+
+</RelativeLayout>
