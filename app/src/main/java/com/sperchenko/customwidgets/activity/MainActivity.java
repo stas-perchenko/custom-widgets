@@ -54,7 +54,16 @@ public class MainActivity extends Activity {
 
         list.expandGroup(0);
 
-
+        list.setOnGroupExpandListener(new ExpandableListView.OnGroupExpandListener() {
+            @Override
+            public void onGroupExpand(int groupPosition) {
+                for (int i = 0; i < list.getExpandableListAdapter().getGroupCount(); i++) {
+                    if (i != groupPosition) {
+                        list.collapseGroup(i);
+                    }
+                }
+            }
+        });
     }
 
     private void showError() {
