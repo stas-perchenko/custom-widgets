@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">CustomWidgets</string>
+
+    <string-array name="children_activity_names">
+        <item>CircleTouchableViewActivity</item>
+    </string-array>
+
+    <string-array name="children_activity_description">
+        <item>Demonstrates CircleTouchableView widget which provides a View with oval touchable area.
+        If the view is square, the touchable area is round. Touching outside the touchable area will be
+        ignored bu the widget. state-list background with oval shapes as items is suitable for this widget.</item>
+    </string-array>
+</resources>
