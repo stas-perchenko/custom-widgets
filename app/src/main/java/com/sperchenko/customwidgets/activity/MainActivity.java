@@ -1,6 +1,8 @@
 package com.sperchenko.customwidgets.activity;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -60,7 +62,22 @@ public class MainActivity extends Activity {
     }
 
     private void showError() {
-        //TODO Implement this
+        new AlertDialog.Builder(this)
+                .setCancelable(true)
+                .setTitle(R.string.err_items_count_title)
+                .setMessage(R.string.err_items_count_message)
+                .setIcon(android.R.drawable.ic_dialog_alert)
+                .setPositiveButton(R.string.err_items_count_btn, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                MainActivity.this.finish();
+            }
+        }).setOnCancelListener(new DialogInterface.OnCancelListener() {
+            @Override
+            public void onCancel(DialogInterface dialog) {
+                MainActivity.this.finish();
+            }
+        }).create().show();
     }
 
     private class MainListAdapter extends BaseExpandableListAdapter {

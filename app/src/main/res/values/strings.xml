@@ -1,6 +1,11 @@
 <resources>
     <string name="app_name">CustomWidgets</string>
 
+    <string name="err_items_count_title">Wrong number of XML strings</string>
+    <string name="err_items_count_message">Numbers of XML string resources for Activities' names and
+    corresponded descriptions are not match.</string>
+    <string name="err_items_count_btn">Close</string>
+
     <string-array name="children_activity_names">
         <item>CircleTouchableViewActivity</item>
     </string-array>
