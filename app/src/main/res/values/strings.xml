@@ -8,8 +8,17 @@
 
     <string name="item_btn_launch">Launch</string>
 
+
+
+
+    <string name="activity_oval_touchable_view_title">OvalTouchableView demonstration</string>
+    <string name="activity_oval_touchable_view_description">The white containers are the FrameLayouts with background color #FFFFFF which contains OvalTouchableViews with MUCH_PARENT params.
+    circular/oval shapes are the &lt;shape-drawable/&gt; backgrounds of the OvalTouchableViews which honor the "pressed" and "selected" states.
+    Touchable areas of the OvalTouchableViews match background shapes\' areas.</string>
+
+
     <string-array name="children_activity_names">
-        <item>CircleTouchableViewActivity</item>
+        <item>OvalTouchableViewActivity</item>
         <item>IdifjdsNsudfhsd</item>
         <item>Okfsdlf</item>
         <item>Jiosdfhosdf</item>

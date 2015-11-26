@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#333333">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:text="@string/activity_oval_touchable_view_description"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginTop="16dp"
+            android:background="#FFFFFF" >
+            <com.sperchenko.widgets.OvalTouchableView
+                android:id="@+id/view_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:background="@drawable/bg_oval_touchable_view"/>
+        </FrameLayout>
+
+        <FrameLayout android:id="@+id/square_container"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_marginTop="24dp"
+            android:background="#FFFFFF" >
+            <com.sperchenko.widgets.OvalTouchableView
+                android:id="@+id/view_square"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:background="@drawable/bg_oval_touchable_view"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="240dp"
+            android:layout_height="360dp"
+            android:layout_marginTop="24dp"
+            android:layout_gravity="center_horizontal"
+            android:background="#FFFFFF" >
+            <com.sperchenko.widgets.OvalTouchableView
+                android:id="@+id/view_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:background="@drawable/bg_oval_touchable_view"/>
+        </FrameLayout>
+    </LinearLayout>
+</ScrollView>
