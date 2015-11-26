@@ -2,4 +2,6 @@
 <ExpandableListView xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@android:id/list"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" />
+    android:layout_height="match_parent"
+    android:indicatorLeft="4dp"
+    android:groupIndicator="@drawable/main_list_group_indicator"/>
