@@ -17,8 +17,12 @@
     Touchable areas of the OvalTouchableViews match background shapes\' areas.</string>
 
 
+    <string name="add_photo">Add photo</string>
+
     <string-array name="children_activity_names">
-        <item>OvalTouchableViewActivity</item>
+        <item>OvalTouchableView</item>
+        <item>AddPhotoDrawableActivity</item>
+        <item>SquareTextViewActivity</item>
         <item>IdifjdsNsudfhsd</item>
         <item>Okfsdlf</item>
         <item>Jiosdfhosdf</item>
@@ -31,6 +35,8 @@
         <item>Demonstrates CircleTouchableView widget which provides a View with oval touchable area.
         If the view is square, the touchable area is round. Touching outside the touchable area will be
         ignored bu the widget. state-list background with oval shapes as items is suitable for this widget.</item>
+        <item>Demonstrated implementation of a custom drawable.</item>
+        <item>Demonstrated implementation of a TextView which wraps its content precerving rectangular shape.</item>
         <item>sldkfjds fkjsdfjsldjfsid fijf wejf weijf iwe fjjwehf jkhefkjhe kjhwej kfhjkewh jkwefhjweflk  wewjefjew jwekhkjwe fjwehfwherf89 we fw8e fw8ehf84h fhiowehf iwhef hfh4u iwehfkjwen cfkjwen fc  cwecwfgreg erg </item>
         <item>dddd f f f  gdfkjhg fdsjhsdjk hfsdoi ufhs iudohf  f dfhasdfu hef he fh ef h edhfjasd fasdjf hjasdf agdqwgdy qwgy  gweqyw ed879f g89 98fdg fdj ogisdhfw 8rf h sdhfisdhfoiewh iwehf iweoh ohsd fsdihf sidhfs89dfh sdhc sdhcs iodhco isdhco</item>
         <item>wefriwe foiwej wijf lkgklfgk[ rktg e[g kpprkf wpekf wmf.wemf lkwejf we ew iweoj fwejf weofj weprojfwe9iry8 y48 84y r8 w0fu e-qw9fu pwe9uf jwoeifhwep f wep fjwepjf wejf wepojf</item>
